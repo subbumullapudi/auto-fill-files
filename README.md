@@ -6,6 +6,8 @@ Analysis of the assignment.
 Choice of package for pdf filling is made.(Trade off and reasoning mentioned in Thought process)
 Facebook Boilerplate for React (frontend) and file structure.
 
+# Checkin-2
+A Node.js service using Express.js is created that can accept an address is created.(TODO: Error scenarios handling)
 
 #Thought process
 Part-1:
