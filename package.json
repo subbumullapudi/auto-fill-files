@@ -1,0 +1,11 @@
+{
+  "requires": true,
+  "lockfileVersion": 1,
+  "dependencies": {
+    "express": "^4.16.2",
+    "expressjs": "^1.0.1",
+    "path": "^0.12.7",
+    "pdffiller": "0.0.10",
+    "pdftk": "0.0.0-rc.0"
+  }
+}
