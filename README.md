@@ -15,6 +15,11 @@ Part-1:
   A tradeoff is made due to windows development and choose pdffiller, which suffices the requirement.
 
 #Instructions to run the solution.The list do not contain trivial installations like node, React boiler plate(create-react-app).
-- This solution requires windows system.
-- Install pdftk before installing pdffiller package.
+- This solution requires a windows system.
+- Install pdftk software before installing pdffiller package at https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/.
+- Clone the code to local machine.
+- Navigate to the downloaded path in a command prompt.
+- Run Node.js service first using the command "node fillService.js". Now the service will be up and running on port 5000
+- Open a new command prompt and navigate to fronend folder
+- Run React app using command "npm start"
 
