@@ -2,15 +2,10 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
 .App-header {
   background-color: #222;
-  height: 150px;
-  padding: 20px;
+  height: 5em;
+  padding: 0.5em;
   color: white;
 }
 
@@ -22,7 +17,30 @@
   font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.App-form{
+  padding: 10em;
+  font-size: large;
+}
+.App-form input{
+  font-size: large;
+}
+
+.App-form input[type="text"]{
+  border: 1px solid grey;
+}
+.App-form input[type="text"]:hover{
+  border: 1px solid white;
+  border-bottom: 1px solid grey;
+  background: #61DAFB;
+}
+.App-form input[type="submit"]{
+  padding: 0.5em;
+  background: #61DAFB;
+  border: none;
+  margin: 2em;
+}
+
+.App-form input[type="submit"]:disabled{
+  color: white;
+  background: grey;
 }

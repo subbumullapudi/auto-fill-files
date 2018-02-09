@@ -6,6 +6,13 @@ var pdfFiller   = require('pdffiller');
 const app = express();
 const port = process.env.PORT || 5000;
 
+//Allow CORS due to cross domain environment
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
 //GET method to fetch address and fill it in the required smart document.
 app.get('/api/filladdress', (req, res) => {
 

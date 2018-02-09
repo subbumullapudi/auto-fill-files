@@ -9,6 +9,10 @@ Facebook Boilerplate for React (frontend) and file structure.
 # Checkin-2
 A Node.js service using Express.js is created that can accept an address is created.(TODO: Error scenarios handling)
 
+# Checkin-3
+Frontend React app is submitted for Part-1 of the assignment.
+API updated to allow CORS requests.
+
 #Thought process
 Part-1:
 - Out of all the pdffiller packages mentioned, pdf-fill-form is the best since it supports checkbox and radio buttons too over pdffiller. 
