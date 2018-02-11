@@ -28,7 +28,16 @@ Backend API:
   File name is appended in the response of the service to use it when user fills the document.
 - API created for filling default(address)  field has to be reused to fill custom files too.
 Frontend:
+- Separate Components created for filling fields and extracting fields.
+- Post extraction of fields from API, filling fields component is reused.
+- Filling fields and extraction components communication is done via Grandparent component (avoided Redux doing this)
+- Main component handles only routing and a messanger between Grandparent(App) and grandchildren components(Fillfile and FillCustomFile)
 
+What could have been done better?(Tradeoffs to adhere to the timeline)
+- pdf-fill-form package could have been used to support OSX too.
+- Better error handling could have been done.
+- Multiple custom files scenario could be developed.(Marked blocks in the code that has to be updated for this)
+- Elegant UI.
 
 #Instructions to run the solution.The list do not contain trivial installations like node, React boiler plate(create-react-app).
 - This solution requires a windows system.
