@@ -13,10 +13,22 @@ A Node.js service using Express.js is created that can accept an address is crea
 Frontend React app is submitted for Part-1 of the assignment.
 API updated to allow CORS requests.
 
+# Checkin-4
+API created to read custom fillable files.
+API to fill files is updated to support custom fillable files.
+
 #Thought process
 Part-1:
 - Out of all the pdffiller packages mentioned, pdf-fill-form is the best since it supports checkbox and radio buttons too over pdffiller. 
   A tradeoff is made due to windows development and choose pdffiller, which suffices the requirement.
+
+Part-2:
+Backend API:
+- New API has to be created to extract fields from custom fillable files and upload the file on server so it can be used again to fill. 
+  File name is appended in the response of the service to use it when user fills the document.
+- API created for filling default(address)  field has to be reused to fill custom files too.
+Frontend:
+
 
 #Instructions to run the solution.The list do not contain trivial installations like node, React boiler plate(create-react-app).
 - This solution requires a windows system.
