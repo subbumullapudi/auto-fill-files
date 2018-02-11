@@ -60,7 +60,7 @@ app.post('/api/extractfields', (req, res) => {
        var FDF_data = pdfFiller.generateFDFTemplate(sourcePDF, null, function(err, fdfData) {
           if (err) return res.json({errMsg:"Not a fillable document"});
           if(Object.keys(fdfData).length == 0) return res.json({errMsg:"No fillable fields found."});
-          fdfData["fillableFile"] = sourcePDF;//Assuming user uploads FDF only.
+          fdfData["fillableFile"] = `${req.file.filename}`;//Assuming user uploads FDF only.
           return res.json(fdfData);
        });
      });

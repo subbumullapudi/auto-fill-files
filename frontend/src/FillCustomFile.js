@@ -10,7 +10,7 @@ class FillCustomFile extends Component {
   }
   handleChange(event) {
     //TODO: Add validation for Uploaded files
-    console.log("Change");
+    console.log("View updated");
   }
   //Form submission and call API to upload PDF
   handleSubmit(event) {
@@ -31,8 +31,6 @@ class FillCustomFile extends Component {
     }).catch(err => console.log(err));
   }
   gotoFillfile(newFields){
-    console.log(newFields);
-    console.log("NAV to home for filling");
     this.props.update(newFields);
     this.props.history.push('/');//TODO:Failing
   }

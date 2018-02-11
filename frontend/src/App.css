@@ -18,7 +18,7 @@
 }
 
 .App-form{
-  padding: 10em;
+  padding: 5em;
   font-size: large;
 }
 .App-form input{
@@ -27,20 +27,43 @@
 
 .App-form input[type="text"]{
   border: 1px solid grey;
+  text-align: left;
 }
-.App-form input[type="text"]:hover{
+.App-form input[type="text"]:focus{
   border: 1px solid white;
   border-bottom: 1px solid grey;
   background: #61DAFB;
 }
-.App-form input[type="submit"]{
+.App-form input[type="submit"], .upload-file input[type="submit"]{
   padding: 0.5em;
   background: #61DAFB;
   border: none;
   margin: 2em;
+  cursor: pointer;
 }
-
 .App-form input[type="submit"]:disabled{
   color: white;
   background: grey;
+  cursor: not-allowed;
+}
+.App-form .form-field{
+  padding: 0.5em;
+}
+.App-form .form-field label{
+  text-transform: capitalize;
+  text-align: right;
+}
+.App-form .form-field dt, .App-form .form-field dd{
+  display: inline-block;
+}
+.App-form .form-field dt{
+  text-align: right;
+  width:40%;
+}
+.App-form .form-field dd{
+  text-align: left;
+  width:50%;
+}
+.upload-file{
+  padding: 2em;
 }

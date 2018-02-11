@@ -32,7 +32,7 @@ Frontend:
 - Post extraction of fields from API, filling fields component is reused.
 - Filling fields and extraction components communication is done via Grandparent component (avoided Redux doing this)
 - Main component handles only routing and a messanger between Grandparent(App) and grandchildren components(Fillfile and FillCustomFile)
-
+- Handling states is tricky.
 
 What could have been done better?(Tradeoffs to adhere to the timeline)
 - pdf-fill-form package could have been used to support OSX too.
@@ -45,9 +45,12 @@ What could have been done better?(Tradeoffs to adhere to the timeline)
 - Install pdftk software before installing pdffiller package at https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/.
 - Clone the code to local machine.
 - Navigate to the downloaded path in a command prompt.
+- Run "npm install" command to install all dependencies.
 - Run Node.js service first using the command "node fillService.js". Now the service will be up and running on port 5000
-- Open a new command prompt and navigate to fronend folder
-- Run React app using command "npm start"
+- Open a new command prompt and navigate to fronend folder.
+- Run "npm install" command to install all dependencies.
+- Run React app using command "npm start".
+- All uploaded and complete files will be found under assets folder.
 
 
 
