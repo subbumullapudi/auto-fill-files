@@ -33,6 +33,7 @@ Frontend:
 - Filling fields and extraction components communication is done via Grandparent component (avoided Redux doing this)
 - Main component handles only routing and a messanger between Grandparent(App) and grandchildren components(Fillfile and FillCustomFile)
 
+
 What could have been done better?(Tradeoffs to adhere to the timeline)
 - pdf-fill-form package could have been used to support OSX too.
 - Better error handling could have been done.
